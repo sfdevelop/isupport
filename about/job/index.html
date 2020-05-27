@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="../../bitrix/templates/is/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../bitrix/templates/is/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../bitrix/templates/is/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="../../bitrix/templates/is/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="../../bitrix/templates/is/favicon-16x16.png" sizes="16x16" />
+	<meta name="application-name" content="iSupport.ru" />
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="../../bitrix/templates/is/mstile-144x144.png" />
+
+	<link rel="stylesheet" type="text/css" media="all" href="../../bitrix/templates/is/fancybox/jquery.fancybox.css">
+
+
+	<!-- Bootstrap core CSS -->
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+                <![endif]-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="robots" content="index, follow" />
+	<meta name="description" content="Вакансии сервисного центра iSupport" />
+	<link href="../../bitrix/js/main/core/css/core.minc871.css?14509485452854" type="text/css" rel="stylesheet" />
+
+	<script type="text/javascript" data-skip-moving="true">
+		(function(w, d, n) {
+			var cl = "bx-core";
+			var ht = d.documentElement;
+			var htc = ht ? ht.className : undefined;
+			if (htc === undefined || htc.indexOf(cl) !== -1) {
+				return;
+			}
+			var ua = n.userAgent;
+			if (/(iPad;)|(iPhone;)/i.test(ua)) {
+				cl += " bx-ios";
+			} else if (/Android/i.test(ua)) {
+				cl += " bx-android";
+			}
+			cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");
+			cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? " bx-retina" : " bx-no-retina";
+			var ieVersion = -1;
+			if (/AppleWebKit/.test(ua)) {
+				cl += " bx-chrome";
+			} else if ((ieVersion = getIeVersion()) > 0) {
+				cl += " bx-ie bx-ie" + ieVersion;
+				if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) {
+					cl += " bx-quirks";
+				}
+			} else if (/Opera/.test(ua)) {
+				cl += " bx-opera";
+			} else if (/Gecko/.test(ua)) {
+				cl += " bx-firefox";
+			}
+			if (/Macintosh/i.test(ua)) {
+				cl += " bx-mac";
+			}
+			ht.className = htc ? htc + " " + cl : cl;
+
+			function isDoctype() {
+				if (d.compatMode) {
+					return d.compatMode == "CSS1Compat";
+				}
+				return d.documentElement && d.documentElement.clientHeight;
+			}
+
+			function getIeVersion() {
+				if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) {
+					return -1;
+				}
+				var rv = -1;
+				if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)) {
+					rv = 11;
+				} else if (!!d.documentMode && d.documentMode >= 10) {
+					rv = 10;
+				} else if (!!d.documentMode && d.documentMode >= 9) {
+					rv = 9;
+				} else if (d.attachEvent && !/Opera/.test(ua)) {
+					rv = 8;
+				}
+				if (rv == -1 || rv == 8) {
+					var re;
+					if (n.appName == "Microsoft Internet Explorer") {
+						re = new RegExp("MSIE ([0-9]+[\.0-9]*)");
+						if (re.exec(ua) != null) {
+							rv = parseFloat(RegExp.$1);
+						}
+					} else if (n.appName == "Netscape") {
+						rv = 11;
+						re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");
+						if (re.exec(ua) != null) {
+							rv = parseFloat(RegExp.$1);
+						}
+					}
+				}
+				return rv;
+			}
+		})(window, document, navigator);
+
+	</script>
+
+
+	<link href="../../bitrix/css/star.notification/notifbd2c.css?15871152272224" type="text/css" rel="stylesheet" />
+	<link href="../../bitrix/cache/css/s1/is/template_14f30e5f72e50ba1ca06d3c4f6f3b379/template_14f30e5f72e50ba1ca06d3c4f6f3b379_v1afe2.css?1589527280197911" type="text/css" data-template-style="true" rel="stylesheet" />
+
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Вакансии в iSupport | iSupport" />
+	<meta property="og:description" content="Вакансии сервисного центра iSupport" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="iSupport" />
+	<meta property="og:image" content="/images/logo.svg" />
+
+	<title>Вакансии в iSupport | iSupport</title>
+
+</head>
+
+<body>
+
+
+
+	<div id="panel"></div>
+	<div id="header-menu" class="container-fluid">
+		<div class="row">
+			<div itemscope="" itemtype="http://schema.org/Organization" class="is-logo-wrapper">
+				<a itemprop="url" href="../../index.html" class="is-logo">
+					<img alt="logo" itemprop="logo" src="../../images/logo.svg" class="is-logo-img" />
+				</a>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1">
+
+				<ul id="menu">
+
+					<li><a href="../../repair/repair-iphone/index.html" class="">Ремонт iPhone</a></li>
+					<li><a href="../../repair/repair-ipad/index.html" class="">Ремонт iPad</a></li>
+					<li><a href="../../repair/repair-macbook/index.html" class="">Ремонт MacBook</a></li>
+					<li><a href="../contacts/index.html" class="">Контакты</a></li>
+					<li>
+						<a href="tel:&#43;7&#40;495&#41;3746474" rel="nofollow" class="is-menu-mb-phone">&#43;7 &#40;495&#41; 374-64-74</a>
+					</li>
+
+				</ul>
+				<div class="menu-clear-left"></div>
+
+			</div>
+			<div class="menu-mb">
+				<span class="sandwich"></span>
+			</div>
+
+			<div class="is-menu-phone-wrapper">
+				<a href="tel:&#43;7&#40;495&#41;3746474" rel="nofollow" class="is-menu-phone"><span>&#43;7 &#40;495&#41; 374-64-74</span></a>
+			</div>
+		</div>
+	</div>
+	<div class="menu-mb-wrapper">
+
+		<ul id="menu-mb-content">
+
+			<li><a href="../../repair/repair-iphone/index.html" class="">Ремонт iPhone</a></li>
+			<li><a href="../../repair/repair-ipad/index.html" class="">Ремонт iPad</a></li>
+			<li><a href="../../repair/repair-macbook/index.html" class="">Ремонт MacBook</a></li>
+			<li><a href="../contacts/index.html" class="">Контакты</a></li>
+			<li>
+				<a href="tel:&#43;7&#40;495&#41;3746474" rel="nofollow" class="is-menu-mb-phone">&#43;7 &#40;495&#41; 374-64-74</a>
+			</li>
+
+		</ul>
+		<div class="menu-clear-left"></div>
+	</div>
+
+
+
+	<div class="container is-inner-header-phone">
+		<div itemscope="" itemtype="http://schema.org/BreadcrumbList" class="clearfix is-breadcrumbs-is">
+			<div class="is-breadcrumbs-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a href=" ../../index.html" title="iSupport" itemprop="item">
+					<span itemprop="name">iSupport</span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</div>
+			<div class="is-breadcrumbs-item" id="bx_breadcrumb_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" itemprop="child">
+				<a href=" ../index.html" title="О компании" itemprop="item">
+					<span itemprop="name">О компании</span>
+				</a>
+				<meta itemprop="position" content="2" />
+			</div>
+			<div class="is-breadcrumbs-item" id="bx_breadcrumb_2" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" itemprop="child">
+				<a href=" index.html" title="Вакансии" itemprop="item">
+					<span itemprop="name">Вакансии</span>
+				</a>
+				<meta itemprop="position" content="3" />
+			</div>
+			<div class="is-breadcrumbs-item">
+				<span title="Вакансии">
+					<span>Вакансии</span>
+				</span>
+
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<div class="">
+		<div class="container" style="text-align: justify;">
+			<div class="text-center text-vertical-center pb30">
+				<h1>Вакансии</h1>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="is-vacancy-item">
+					<div class="vacancy-item-title-h3"><span class="vacancy-item-title">Менеджер по работе с клиентами</span></div>
+					<div class="vacancy-item-text">
+						<p>
+							Требуемый опыт работы: 1–3 года
+						</p>
+						<p>
+							Полная занятость, полный день
+						</p>
+						<p>
+							В сервисный центр по ремонту техники Apple требуется менеджер по работе с клиентами.
+						</p>
+						<h3>
+							Обязанности:</h3>
+						<ul>
+							<li>Консультация клиентов по вопросам ремонта и стоимости услуг по телефону и при визите клиента в сервисный центр;</li>
+							<li>
+								Прием оборудования в ремонт и оформление документов;</li>
+							<li>Согласование стоимости и сроков выполнения работ с клиентом;</li>
+							<li>Выдача оборудования после ремонта;</li>
+							<li>Продажа аксессуаров.</li>
+						</ul>
+						<h3>Требования:&nbsp;<br>
+						</h3>
+						<ul>
+							<li>Грамотная речь‚ навыки общения с людьми‚ способность объяснять‚ рассказывать;</li>
+							<li>Пунктуальность, ответственность, стрессоустойчивость, честность и порядочность;</li>
+							<li>Опыт работы с&nbsp;техникой&nbsp;Apple, знание основных функций;</li>
+							<li>Знание английского языка на разговорном уровне (обязательно).</li>
+						</ul>
+						<h3>Условия:</h3>
+						<ul>
+							<li>Оформление по ТК РФ;</li>
+							<li>
+								Режим работы с 10:00 до 20:00 по графику 5/2;</li>
+							<li>
+								Заработная плата - 20.000 руб (оклад) + проценты с каждого принятого/выданного заказ-наряда; выплата дважды в месяц без задержек;</li>
+							<li>
+								Современное оборудованное рабочее место, комната отдыха с мини-кухней и персональным шкафчиком для одежды и личных вещей;</li>
+							<li>Наш сервисный центр находится в самом центре Москвы в 1 минуте пешком от метро Лубянка.</li>
+						</ul>
+						<p>
+							Уважаемые кандидаты!
+						</p>
+						<p>
+							Перед тем как откликаться, пожалуйста, изучите внимательно текст вакансии. В сопроводительном письме укажите Ваш опыт или интересы в сфере использования техники Apple. Резюме без сопроводительного письма не рассматриваются.
+						</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="is-vacancy-item">
+					<div class="vacancy-item-title-h3"><span class="vacancy-item-title">Сервисный инженер/мастер по ремонту техники Apple</span></div>
+					<div class="vacancy-item-text">
+						<p>
+							Требуемый опыт работы: 1–3 года
+						</p>
+						<p>
+							Полная занятость, полный день
+						</p>
+						<p>
+							В сервисный центр по ремонту техники Apple требуется инженер по ремонту техники Apple (iPhone‚ iPad‚ iPod‚ MacBook).
+						</p>
+						<h3>
+							Обязанности:</h3>
+						<ul>
+							<li>Самостоятельная диагностика и ремонт сложных неисправностей.</li>
+						</ul>
+						<h3>Требования:&nbsp;</h3>
+						<ul>
+							<li>Опыт ремонта на компонентном уровне (замена дисплеев‚ тачскринов‚ корпусов‚ шлейфов);</li>
+							<li>Опыт ремонта на уровне BGA (замена микросхем и прочих элементов на плате, восстановление утопленных устройств);</li>
+							<li>Пунктуальность, ответственность‚ стрессоустойчивость, аккуратность, честность и порядочность.</li>
+						</ul>
+						<h3>Условия:</h3>
+						<ul>
+							<li>Оформление по ТК РФ;</li>
+							<li>
+								Режим работы с 10:00 до 20:00 по графику 5/2;</li>
+							<li>
+								Заработная плата - 25.000 руб (оклад) +&nbsp;проценты с каждого выполненного заказ-наряда; выплата дважды в месяц без задержек;</li>
+							<li>
+								Современное оборудованное рабочее место, комната отдыха с мини-кухней и персональным шкафчиком для одежды и личных вещей;</li>
+							<li>Наш сервисный центр находится в самом центре Москвы в 1 минуте пешком от метро Лубянка.</li>
+						</ul>
+						<p>
+							Уважаемые кандидаты!
+						</p>
+						<p>
+							Перед тем как откликаться, пожалуйста, изучите внимательно текст вакансии. В сопроводительном письме укажите Ваш опыт или интересы в сфере использования техники Apple. Резюме без сопроводительного письма не рассматриваются.
+						</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<br />
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div style="background:#f5f5f5;">
+		<div class="container is-container mob-pt0">
+			<div class="row">
+				<div class="col-sm-9 col-md-6 is-footer-menu-container">
+
+
+					<div class="is-footer-desktop-menu">
+						<div class="col-sm-4 pl0">
+							<ul class="is-footer-menu">
+								<li><a href="../../repair/repair-iphone/index.html">Ремонт iPhone</a></li>
+								<li><a href="../../repair/repair-ipad/index.html">Ремонт iPad</a></li>
+								<li><a href="../../repair/repair-mac/index.html">Ремонт MacBook</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-5 pl0">
+							<ul class="is-footer-menu">
+								<li><a href="../../news/index.html">Новости</a></li>
+								<li><a href="../../blog/index.html">Блог</a></li>
+								<li><a href="../../promotions/index.html">Акции и скидки</a></li>
+								<li><a href="../guestbook/index.html">Отзывы клиентов</a></li>
+
+								<!--<li>&nbsp;</li>-->
+							</ul>
+						</div>
+						<div class="col-sm-3 pl0">
+							<ul class="is-footer-menu">
+								<li><a href="../index.html">О компании</a></li>
+								<li><a href="../kak-my-rabotaem/index.html">Как мы работаем</a></li>
+								<li><a href="../warranty/index.html">Гарантия</a></li>
+								<li><a href="index.html">Вакансии</a></li>
+								<li><a href="../contacts/index.html">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="is-footer-mobile-menu">
+						<div>
+							<nav class="nav" role="navigation">
+								<ul class="nav__list">
+									<li>
+										<input id="group-1" type="checkbox" hidden />
+										<label for="group-1"><span class="glyphicon glyphicon-menu-right"></span> Ремонт</label>
+										<ul class="group-list">
+											<li><a href="../../repair/repair-iphone/index.html">Ремонт iPhone</a></li>
+											<li><a href="../../repair/repair-ipad/index.html">Ремонт iPad</a></li>
+											<li><a href="../../repair/repair-mac/index.html">Ремонт MacBook</a></li>
+										</ul>
+									</li>
+									<li>
+										<input id="group-2" type="checkbox" hidden />
+										<label for="group-2"><span class="glyphicon glyphicon-menu-right"></span> Услуги</label>
+										<ul class="group-list">
+										</ul>
+									</li>
+									<li>
+										<input id="group-3" type="checkbox" hidden />
+										<label for="group-3"><span class="glyphicon glyphicon-menu-right"></span> Информация</label>
+										<ul class="group-list">
+											<li><a href="../index.html">О компании</a></li>
+											<li><a href="../kak-my-rabotaem/index.html">Как мы работаем</a></li>
+											<li><a href="../warranty/index.html">Гарантия</a></li>
+											<li><a href="index.html">Вакансии</a></li>
+											<li><a href="../../news/index.html">Новости</a></li>
+											<li><a href="../../blog/index.html">Блог</a></li>
+											<li><a href="../../promotions/index.html">Акции и скидки</a></li>
+											<li><a href="../guestbook/index.html">Отзывы клиентов</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="../contacts/index.html"> Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="pt20">
+						<div class="col-sm-5 pl0"><a class="text-blue is-remont-status-btn">Проверить статус ремонта</a></div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-4 col-md-offset-2 is-footer-contact vcard">
+					<div style="display: none" class="fn org">iSupport</div>
+					<div style="display: none"><img class="photo" src="../../images/logo.svg"></div>
+					<div style="display: none" class="pricerange">$$</div>
+					<div class="p">Телефон: <a class="is-menu-phone" href="tel:&#43;7&#40;495&#41;3746474" rel="nofollow">&#43;7 &#40;495&#41; 374-64-74</a></div>
+					<div class="p adr">Адрес: г. Москва, ул. Никольская 19/21</div>
+					<div class="p">Работаем ежедневно 10:00 - 20:00, <br />без перерывов и выходных</div>
+				</div>
+			</div>
+			<div class="row">
+
+
+				<div class="col-md-12 is-footer-menu-container">
+					<div class="col-sm-4 col-sm-offset-8 is-footer-social">
+						<div class="is-social-icon">
+							<a rel="nofollow" href="https://api.whatsapp.com/send?phone=74953746474&amp;text=" target="_blank">
+								<img alt="Whatsapp" src="../../upload/iblock/54b/watsapp.jpg" title="Whatsapp" />
+							</a>
+						</div>
+						<div class="is-social-icon">
+							<a rel="nofollow" href="https://teleg.one/iSupportRU_bot" target="_blank">
+								<img alt="Telegram" src="../../upload/iblock/a2f/telegram.jpg" title="Telegram" />
+							</a>
+						</div>
+						<div class="is-social-icon">
+							<a rel="nofollow" href="https://vk.com/isupp0rt_ru" target="_blank">
+								<img alt="ВКонтакте" src="../../upload/iblock/269/vk.jpg" title="ВКонтакте" />
+							</a>
+						</div>
+						<div class="is-social-icon">
+							<a rel="nofollow" href="https://www.facebook.com/isupport.ru/" target="_blank">
+								<img alt="Facebook" src="../../upload/iblock/fba/facebook.jpg" title="Facebook" />
+							</a>
+						</div>
+						<div class="is-social-icon">
+							<a rel="nofollow" href="https://www.instagram.com/isupport_russia/" target="_blank">
+								<img alt="Instagram" src="../../upload/iblock/246/instagram.jpg" title="Instagram" />
+							</a>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+				</div>
+			</div>
+			<div class="row pt30 is-copyright">
+				<!--noindex-->
+				<div class="col-md-12 is-footer-menu-container ">
+					<hr>
+					<br />
+					© 2010-2020 Сервисный центр iSupport (Айсаппорт). Название и логотип являются товарным знаком на территории РФ. Все права защищены.
+					<br />
+					ИНН: 501208310166 | ОГРНИП: 308501211400039
+					<br />
+					Условия пользования сайтом | <a href="../privacy/index.html" rel="nofollow">Политика конфиденциальности</a> | <a href="../../sitemap/index.html">Карта сайта</a></div>
+				<!--/noindex-->
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<div id="feedback">
+		<!-- hidden inline form -->
+		<div id="comp_2892176b58f51f5eb53f880c45b7c472">
+			<div class="mfeedback">
+
+
+				<div class="bg-grad-fa1">
+					<div id="is-order-block2" class="is-container is-order text-center">
+						<div class="h1">Оставить заявку</div>
+
+
+						<div class="pt30">
+							<div class="col-md-8 col-md-offset-2">
+
+								<form action="https://www.isupport.ru/about/job/" method="POST" class="is-order-form2"><input type="hidden" name="bxajaxid" id="bxajaxid_2892176b58f51f5eb53f880c45b7c472_8BACKi" value="2892176b58f51f5eb53f880c45b7c472" /><input type="hidden" name="AJAX_CALL" value="Y" /> <input type="hidden" name="sessid" id="sessid" value="d37bedaf7d0a216e589777f8e124eb1c" />
+									<div class="row">
+										<div class="col-sm-12">
+											<input required class="is-order-input " type="text" name="user_name" placeholder="Ваше имя" value="">
+											<input required class="is-order-input " type="text" name="user_phone" id="popup_user_phone" placeholder="Контактный телефон" value="">
+										</div>
+									</div>
+									<input type="hidden" name="recaptcha_response" id="recaptchaResponse2">
+									<input type="hidden" name="PARAMS_HASH" value="e6fbe820726391aae6a7847cb9ea5ded">
+
+									<div class="row">
+										<input class="is-order-submit is-btn" type="submit" name="submit" value="Отправить заявку" />
+									</div>
+									<!--noindex-->
+									<div class="row">
+										<div class="col-sm-12 text-center pt20">
+											<label><input type="checkbox" name="Согласие" required checked> Я согласен с <a href="../privacy/index.html" rel="nofollow">
+													<font color="1172c6">политикой обработки персональных данных</font>
+												</a></label>
+										</div>
+									</div>
+									<!--/noindex-->
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="remontStatusModal" class="is-remont-status-modal modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+				</div>
+				<center><iframe id="remonline-widget-frame" src="http://api.remonline.ru/widget?key=ad40f3614c9a9c049f72982b6ca7db83&amp;ref=true" scrolling="no" width="100%" height="200px" frameborder="0"></iframe></center>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="back-top"></div>
+
+
+	<script src="../../acess/oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="../../acess/oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<script type="text/javascript">
+		if (!window.BX) window.BX = {};
+		if (!window.BX.message) window.BX.message = function(mess) {
+			if (typeof mess == 'object')
+				for (var i in mess) BX.message[i] = mess[i];
+			return true;
+		};
+
+	</script>
+	<script type="text/javascript">
+		(window.BX || top.BX).message({
+			'JS_CORE_LOADING': 'Загрузка...',
+			'JS_CORE_NO_DATA': '- Нет данных -',
+			'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+			'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+			'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+			'JS_CORE_WINDOW_SAVE': 'Сохранить',
+			'JS_CORE_WINDOW_CANCEL': 'Отменить',
+			'JS_CORE_WINDOW_CONTINUE': 'Продолжить',
+			'JS_CORE_H': 'ч',
+			'JS_CORE_M': 'м',
+			'JS_CORE_S': 'с',
+			'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+			'JSADM_AI_ALL_NOTIF': 'Показать все',
+			'JSADM_AUTH_REQ': 'Требуется авторизация!',
+			'JS_CORE_WINDOW_AUTH': 'Войти',
+			'JS_CORE_IMAGE_FULL': 'Полный размер'
+		});
+
+	</script>
+	<script type="text/javascript" src="../../bitrix/js/main/core/core.minbe2d.js?1574251020232644"></script>
+	<script>
+		BX.setJSList(['/bitrix/js/main/core/core_ajax.js', '../../bitrix/js/main/core/core_promise.js', '../../bitrix/js/main/polyfill/promise/js/promise.js', '../../bitrix/js/main/loadext/loadext.js', '../../bitrix/js/main/loadext/extension.js', '../../bitrix/js/main/polyfill/promise/js/promise.js', '../../bitrix/js/main/polyfill/find/js/find.js', '../../bitrix/js/main/polyfill/includes/js/includes.js', '../../bitrix/js/main/polyfill/matches/js/matches.js', '../../bitrix/js/ui/polyfill/closest/js/closest.html', '../../bitrix/js/main/polyfill/fill/main.polyfill.fill.js', '../../bitrix/js/main/polyfill/find/js/find.js', '../../bitrix/js/main/polyfill/matches/js/matches.js', '../../bitrix/js/main/polyfill/core/dist/polyfill.bundle.js', '../../bitrix/js/main/polyfill/core/dist/polyfill.bundle.js', '../../bitrix/js/main/lazyload/dist/lazyload.bundle.js', '../../bitrix/js/main/polyfill/core/dist/polyfill.bundle.js', '/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+		BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css', '/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+
+	</script>
+	<script type="text/javascript">
+		(window.BX || top.BX).message({
+			'LANGUAGE_ID': 'ru',
+			'FORMAT_DATE': 'DD.MM.YYYY',
+			'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+			'COOKIE_PREFIX': 'ISUPPORT_SC',
+			'SERVER_TZ_OFFSET': '10800',
+			'SITE_ID': 's1',
+			'SITE_DIR': '/',
+			'USER_ID': '',
+			'SERVER_TIME': '1590566293',
+			'USER_TZ_OFFSET': '0',
+			'USER_TZ_AUTO': 'Y',
+			'bitrix_sessid': 'd37bedaf7d0a216e589777f8e124eb1c'
+		});
+
+	</script>
+
+
+	<script type="text/javascript" src="../../bitrix/cache/js/s1/is/template_adb2ac2818cf2d7b395d2775d85816d5/template_adb2ac2818cf2d7b395d2775d85816d5_v1e7aa.js?1587541959945"></script>
+
+
+	<script src="../../acess/ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('.lazy').lazy();
+		})
+
+	</script>
+	<script src="../../bitrix/templates/is/js/bootstrap.min.js"></script>
+	<script src="../../bitrix/templates/is/js/jquery.bxslider.js"></script>
+	<script src="../../bitrix/templates/is/js/custom3860.js?v=1"></script>
+	<script src="../../bitrix/templates/is/js/maskedinput.min.js"></script>
+	<script type="text/javascript" src="../../acess/cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+	<script type="text/javascript" src="../../acess/cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+	<script type="text/javascript" src="../../bitrix/templates/is/fancybox/jquery.fancybox.js"></script>
+
+
+	<script>
+		(function(w, d, s, h, id) {
+			w.roistatProjectId = id;
+			w.roistatHost = h;
+			var p = d.location.protocol == "https:" ? "https://" : "http://";
+			var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+			var js = d.createElement(s);
+			js.charset = "UTF-8";
+			js.async = 1;
+			js.src = p + h + u;
+			var js2 = d.getElementsByTagName(s)[0];
+			js2.parentNode.insertBefore(js, js2);
+		})(window, document, 'script', 'cloud.roistat.com', '42f9a7328b981c03db3f1dc0bc8284f7');
+
+	</script>
+
+</body>
+
+</html>
